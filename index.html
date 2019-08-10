@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <title>shizhchen2's personal page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <style>
+        *{
+            color:#8c8c8c;
+        }
+        .header{
+            color:#0e90d2;
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            box-shadow: 2px 2px 2px #9d9d9d;
+            background-color:#ffffff;
+            z-index: 9999;
+        }
+        .header a{
+            text-decoration: none;
+            color:#222222;
+        }
+        .briefInfo{
+            height:500px;
+            width:300px;
+            margin:280px auto;
+            text-align:center;
+            vertical-align: center;
+            /*display:none;*/
+            /*background-color:red;*/
+        }
+        /*.briefInfo img{*/
+        /*    height:200px;*/
+        /*    width:150px;*/
+        /*    !*border-radius:50%;*!*/
+        /*    !*border: #9d9d9d solid 3px;*!*/
+        /*}*/
+        .briefInfo .ticks span{
+            padding-left:-15px;
+            float:left;
+            height:15px;
+            width:15px;
+            background-color:#f0ad4e;
+            border-radius:50%;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        @keyframes opc {
+            0% {
+                opacity: 0.1;
+            }
+            30% {
+                opacity: 0.3;
+            }
+            60% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1.0;
+            }
+        }
+        #firstPage{
+            height:860px;
+            width:100%;
+            text-align:center;
+        }
+        #resume{
+            height:860px;
+            width:100%;
+            text-align: left;
+            padding-top:15%;
+            padding-left:15%;
+            padding-right:15%;
+
+        }
+        /*#project{*/
+        /*    height: 860px;*/
+        /*    width:100%;*/
+        /*    text-align:center;*/
+        /*}*/
+        #contact{
+            padding-top:40%;
+            height: 860px;
+            width:100%;
+            text-align:center;
+        }
+
+        .arrow{
+            position:fixed;
+            /*text-align:center;*/
+            bottom:20px;
+            left:50%;
+        }
+        .arrow .arrowDown{
+            height:50px;
+            width:auto;
+            opacity: 0.5;
+        }
+        .arrowBack{
+            position:fixed;
+            /*text-align:center;*/
+            bottom:20px;
+            left:95%;
+            display:none;
+        }
+        .arrowBack .backToTheTop{
+            height:50px;
+            width:auto;
+            opacity: 0.5;
+        }
+        /*.education,.skill{*/
+        /*    height: 200px;*/
+        /*    width: 300px;*/
+        /*    margin:200px auto;*/
+        /*    text-align: center;*/
+        /*    background-color:#8a6d3b;*/
+        /*    border-radius:30%;*/
+        /*}*/
+        #edu{
+            height:30px;
+            width:30px;
+            opacity: 0.5;
+            margin-right:20px;
+            margin-bottom: 5px;
+        }
+        #skills{
+            height:45px;
+            width:45px;
+            opacity: 0.5;
+            margin-right:5px;
+        }
+        .front-end{
+            opacity: 0.7;
+        }
+        .frames{
+            opacity: 0.5;
+        }
+        .others{
+            opacity: 0.3;
+        }
+        .github{
+            height:85px;
+            width:auto;
+            opacity: 0.5;
+            left:25%;
+        }
+        .gmail{
+            height:85px;
+            width:auto;
+            left:35%;
+            opacity:0.5;
+        }
+        .tags{
+            margin-top: 25%;
+        }
+    </style>
+
+
+
+</head>
+<body>
+<div class="header">
+    <ul class="nav nav-tabs">
+        <li class="firstPage active"><a href="#">首页</a></li>
+        <li class="resume"><a href="#resume">简历</a></li>
+<!--        <li class="project"><a href="#project">项目</a></li>-->
+        <li class="contact"><a href="#contact">联系</a></li>
+    </ul>
+</div>
+<div id="fullPage">
+<div class="pager active" id="firstPage">
+<div id="brief" class="container briefInfo">
+<!--    //<img src="./images/IMG_2823.JPG">-->
+    <h3 id="hello" style="color: #8c8c8c">Hi, i am shizhchen2.</h3>
+    <p style="color: #23527c;">a front-end developer~</p>
+    <p>welcome to my personal page!</p>
+    <div class="ticks">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+</div>
+    <div class='pager ' id="resume">
+
+        <h2><svg id="edu" t="1565350734408" class="icon" viewBox="0 0 1120 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2478" width="200" height="200"><path d="M1081.372587 410.809524c24.821143-14.679773 39.220767-37.483848 39.220767-62.641169s-14.231536-47.961396-39.220767-62.641168l-455.801347-268.942405C588.311511-5.490907 532.281843-5.490907 494.854025 16.528752L39.220767 285.527187c-24.989232 14.679773-39.220767 37.483848-39.220767 62.641168s14.231536 47.961396 39.220767 62.641169l121.920557 72.054152 1.344712 365.98579a118.838925 118.838925 0 0 0 71.213708 108.585496A799.095121 799.095121 0 0 0 554.69371 1023.998207a778.812381 778.812381 0 0 0 343.181715-79.394039 95.250435 95.250435 0 0 0 53.004066-84.044502l2.913542-374.110091zM538.333047 90.207765a53.172155 53.172155 0 0 1 43.92726 0l437.031408 257.736471-437.031408 257.736472a53.172155 53.172155 0 0 1-43.92726 0L233.419596 426.161653a42.750636 42.750636 0 0 0-16.808901-10.029311L101.24561 348.168355z m326.877082 769.455427a8.852687 8.852687 0 0 1-4.818552 8.012242A684.906658 684.906658 0 0 1 554.69371 938.440904a713.593848 713.593848 0 0 1-286.815869-59.447477 33.281623 33.281623 0 0 1-19.666413-30.480139l-1.288682-315.054822 247.931279 146.629641a137.832983 137.832983 0 0 0 130.885304 0l241.992135-142.819623z" p-id="2479"></path><path d="M1076.441976 453.672219a42.750636 42.750636 0 0 0-42.750636 42.750637v370.748311a42.806666 42.806666 0 0 0 85.557302 0V496.422856a42.806666 42.806666 0 0 0-42.806666-42.750637z" p-id="2480"></path></svg>教育背景</h2>
+
+        <h4>硕士: 香港城市大学</h4>
+        <h4>本科: 厦门大学</h4>
+        <hr/>
+        <h2><svg id="skills" t="1565351257038" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3015" width="200" height="200"><path d="M698.22 680.665l8.882 36.354c2.228 9.12-3.36 18.32-12.48 20.549-9.12 2.228-18.32-3.36-20.549-12.48l-8.881-36.354-28.143-115.193a17 17 0 0 1 5.338-16.844C677.857 525.751 698 481.47 698 434.325 698 344.829 625.243 272 535.854 272c-89.388 0-162.14 72.827-162.14 162.325 0 1.93 0.034 3.824 0.108 5.779a17 17 0 0 1-0.108 2.666v20.9a17 17 0 0 1-1.792 7.597l-41.177 82.438 31.35 10.46a17 17 0 0 1 11.619 16.126v70.941h93.328a17 17 0 0 1 16.726 13.961L496.814 737h145.638c9.388 0 17 7.611 17 17s-7.612 17-17 17H489.127c-11.984 0-22.24-8.568-24.393-20.364l-11.882-65.404H364.5c-13.69 0-24.786-11.107-24.786-24.795V592.54l-29.788-9.94c-14.238-4.75-21.042-21.174-14.332-34.609l44.12-88.33v-17.535c0-0.698 0.029-1.392 0.087-2.08-0.06-1.922-0.087-3.812-0.087-5.721C339.714 326.057 427.68 238 535.854 238 644.028 238 732 326.058 732 434.325c0 53.456-21.476 103.964-59.542 140.89l25.763 105.45z" p-id="3016"></path><path d="M577.59 317.087c20.415-4.792 40.467-1.29 57.32 10.151 35.905 24.395 46.4 76.295 25.219 118.512-15.683 31.266-40.226 56.058-69.972 75.183a239.077 239.077 0 0 1-30.923 16.818 197.214 197.214 0 0 1-10.062 4.222c-2.048 0.79-3.676 1.372-4.826 1.755a24.83 24.83 0 0 1-15.676 0.006 116.274 116.274 0 0 1-5.193-1.896 200.934 200.934 0 0 1-10.833-4.595 239.346 239.346 0 0 1-33.036-18.427c-7.813-5.207-9.927-15.761-4.72-23.574 5.206-7.813 15.76-9.927 23.573-4.72a205.543 205.543 0 0 0 28.33 15.804 167.072 167.072 0 0 0 8.991 3.817c0.86 0.221 1.006 0.165 1.157 0.107 2.48-0.957 5.271-2.119 8.319-3.493a205.258 205.258 0 0 0 26.511-14.423c24.996-16.07 45.31-36.591 57.97-61.83 13.867-27.641 7.16-60.808-13.933-75.14-8.875-6.025-19.171-7.823-30.444-5.177-11.87 2.788-24.268 10.36-36.838 22.932-6.64 6.64-17.404 6.64-24.043 0-12.568-12.569-24.972-20.143-36.841-22.932-11.282-2.648-21.575-0.851-30.443 5.174-21.099 14.335-27.804 47.502-13.929 75.148 4.652 9.28 10.381 17.975 17.077 26.092 5.974 7.242 4.947 17.957-2.296 23.932-7.242 5.974-17.957 4.947-23.932-2.296-8.283-10.042-15.418-20.87-21.24-32.484-21.188-42.217-10.695-94.119 25.213-118.515 16.844-11.444 36.898-14.944 57.322-10.15 14.177 3.33 27.917 10.465 41.09 21.127 13.172-10.663 26.909-17.797 41.087-21.128z m-38.251 194.364a29.585 29.585 0 0 0 0.028 0.01l-0.028-0.01z" p-id="3017"></path></svg>技能</h2>
+
+        <div class="tags">
+            <div class="front-end">
+            <div class="btn btn-default" style="margin-left:20%">HTML</div>
+            <div class="btn btn-default" >CSS</div>
+            <div class="btn btn-default">Javascript</div>
+            <div class="btn btn-default">ES6</div>
+            </div>
+            </br>
+            <div class="frames">
+            <div class="btn btn-default" style="margin-left:25%">React</div>
+            <div class="btn btn-default">jQuery</div>
+            <div class="btn btn-default">Bootstrap</div>
+            </div>
+            </br>
+            <div class="others">
+            <div class="btn btn-default" style="margin-left:20%">Java</div>
+            <div class="btn btn-default">Python</div>
+            <div class="btn btn-default">SQL</div>
+            <div class="btn btn-default">SPSS</div>
+            <div class="btn btn-default">SAS</div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class='pager' id="contact">
+        <div class="github col-lg-6 col-xs-6">
+            <a href="https://github.com/shizhchen2">
+                <svg t="1565434448200" class="github icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2662" width="200" height="200"><path d="M511.542857 14.057143C228.914286 13.942857 0 242.742857 0 525.142857 0 748.457143 143.2 938.285714 342.628571 1008c26.857143 6.742857 22.742857-12.342857 22.742858-25.371429v-88.571428c-155.085714 18.171429-161.371429-84.457143-171.771429-101.6C172.571429 756.571429 122.857143 747.428571 137.714286 730.285714c35.314286-18.171429 71.314286 4.571429 113.028571 66.171429 30.171429 44.685714 89.028571 37.142857 118.857143 29.714286 6.514286-26.857143 20.457143-50.857143 39.657143-69.485715-160.685714-28.8-227.657143-126.857143-227.657143-243.428571 0-56.571429 18.628571-108.571429 55.2-150.514286-23.314286-69.142857 2.171429-128.342857 5.6-137.142857 66.4-5.942857 135.428571 47.542857 140.8 51.771429 37.714286-10.171429 80.8-15.542857 129.028571-15.542858 48.457143 0 91.657143 5.6 129.714286 15.885715 12.914286-9.828571 76.914286-55.771429 138.628572-50.171429 3.314286 8.8 28.228571 66.628571 6.285714 134.857143 37.028571 42.057143 55.885714 94.514286 55.885714 151.2 0 116.8-67.428571 214.971429-228.571428 243.314286a145.714286 145.714286 0 0 1 43.542857 104v128.571428c0.914286 10.285714 0 20.457143 17.142857 20.457143 202.4-68.228571 348.114286-259.428571 348.114286-484.685714 0-282.514286-229.028571-511.2-511.428572-511.2z" p-id="2663"></path></svg>
+                <p>Find more my codes</p>
+            </a>
+
+        </div>
+        <div class="gmail col-xs-6 col-lg-6">
+            <a href="mailto:shizhenchen93@gmail.com" >
+                <svg t="1565435029052" class="icon gmail" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2928" width="200" height="200"><path d="M853.333333 768 768 768 768 394.666667 512 554.666667 256 394.666667 256 768 170.666667 768 170.666667 256 221.866667 256 512 437.333333 802.133333 256 853.333333 256M853.333333 170.666667 170.666667 170.666667C123.306667 170.666667 85.333333 208.64 85.333333 256L85.333333 768C85.333333 814.933333 123.733333 853.333333 170.666667 853.333333L853.333333 853.333333C900.266667 853.333333 938.666667 814.933333 938.666667 768L938.666667 256C938.666667 208.64 900.266667 170.666667 853.333333 170.666667Z" p-id="2929"></path></svg>
+            <p>shizhenchen93@gmail.com</p>
+            </a>
+
+        </div>
+    </div>
+</div>
+<!-- Single button -->
+
+<div class="arrow">
+    <a href="">
+    <svg t="1565183964658" class="icon arrowDown" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2118" width="200" height="200"><path d="M136.704592 649.204586c0 9.79988 3.699955 19.59976 11.199863 26.99967l336.595881 336.595881c7.199912 7.199912 16.899793 11.199863 26.99967 11.199863 10.099876 0 19.899757-3.999951 26.99967-11.199863l337.595869-337.595869c14.899818-14.899818 14.899818-39.099522 0-54.099338s-39.19952-14.899818-54.099338 0L511.500006 931.701129 201.903794 622.104918c-14.899818-14.899818-39.19952-14.899818-54.099338 0-7.399909 7.499908-11.099864 17.299788-11.099864 27.099668z" p-id="2119"></path><path d="M136.704592 344.208318c0 9.79988 3.699955 19.59976 11.199863 26.99967l336.595881 336.595881c7.199912 7.199912 16.899793 11.199863 26.99967 11.199863 10.099876 0 19.899757-3.999951 26.99967-11.199863l337.595869-337.595869c14.899818-14.899818 14.899818-39.099522 0-54.099338s-39.19952-14.899818-54.099338 0L511.500006 626.704861 201.903794 317.208649c-14.899818-14.899818-39.19952-14.899818-54.099338 0-7.399909 7.499908-11.099864 17.19979-11.099864 26.999669z" p-id="2120"></path><path d="M136.704592 39.312049c0 9.79988 3.699955 19.59976 11.199863 26.99967l336.595881 336.595881c7.199912 7.199912 16.899793 11.199863 26.99967 11.199863 10.099876 0 19.899757-3.999951 26.99967-11.199863L876.095545 65.311731c14.899818-14.899818 14.899818-39.099522 0-54.099338s-39.19952-14.899818-54.099338 0L511.500006 321.808592 201.903794 12.212381c-14.899818-14.899818-39.19952-14.899818-54.099338 0-7.399909 7.499908-11.099864 17.299788-11.099864 27.099668z" p-id="2121"></path></svg></a>
+</div>
+<div class="arrowBack">
+    <a href="#"><svg t="1565185714825" class="icon backToTheTop" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1710" width="200" height="200"><path d="M511.882314 258.483172l244.87664 285.677815-20.872354 0c-52.942262 0-96.003006 43.070977-96.003006 96.018356l0 288.054046-255.999488 0L383.884105 640.179343c0-52.947379-43.065861-96.018356-95.999936-96.018356l-20.879518 0L511.882314 258.483172M511.882314 174.343923c-7.559525 0-15.127238 3.372979-20.811976 10.000228l-342.379885 399.571118c-11.433949 13.321016-6.431788 24.258637 11.19346 24.258637l128.001279 0c17.623201 0 31.99725 14.377118 31.99725 32.004413l0 320.058459c0 17.630365 14.377118 32.008507 32.001343 32.008507l320.002175 0c17.629342 0 31.995203-14.379165 31.995203-32.008507L703.881163 640.179343c0-17.628318 14.376095-32.004413 32.00646-32.004413l127.998209 0c17.621155 0 22.623315-10.937621 11.186297-24.258637l-342.378861-399.571118C527.005459 177.716902 519.44184 174.343923 511.882314 174.343923L511.882314 174.343923z" p-id="1711"></path><path d="M191.88321 64.070228c0 17.693813-14.312647 32.008507-32.00032 32.008507-17.687673 0-31.999296-14.314694-31.999296-32.008507 0-17.688696 14.3106-32.004413 31.999296-32.004413C177.570563 32.065815 191.88321 46.381532 191.88321 64.070228z" p-id="1712"></path><path d="M895.884105 64.070228c0 17.693813-14.311624 32.008507-32.00032 32.008507-17.693813 0-32.002367-14.314694-32.002367-32.008507 0-17.688696 14.308554-32.004413 32.002367-32.004413C881.572481 32.065815 895.884105 46.381532 895.884105 64.070228z" p-id="1713"></path><path d="M159.88289 32.065815l704.001919 0 0 64.01292-704.001919 0 0-64.01292Z" p-id="1714"></path></svg></a>
+</div>
+<script>
+    window.onload=function(){
+        let tabs = document.getElementsByTagName('li');
+        let firstPage = document.querySelector('.firstPage');
+        let resume = document.querySelector('.resume');
+        // let project = document.querySelector('.project');
+        let contact = document.querySelector('.contact');
+        let arrow = document.querySelector('.arrow');
+        let arrowBack = document.querySelector('.arrowBack');
+        let ids = ['#resume','#project','#contact'];
+
+        firstPage.addEventListener('click',function(){
+            clearClass();
+            this.className += ' active';
+
+        })
+
+        resume.addEventListener('click',function(){
+            clearClass();
+            this.className += ' active';
+
+        })
+        // project.addEventListener('click',function(){
+        //     clearClass();
+        //     this.className += ' active';
+        //
+        // })
+        contact.addEventListener('click',function(){
+            clearClass();
+            this.className += ' active';
+
+        })
+        function clearClass(){
+            for(let i = 0;i<tabs.length;i++){
+                tabs[i].className= tabs[i].className.split(' ').indexOf('active')>0?tabs[i].className.split(' ')[0]:tabs[i].className;
+            }
+
+        }
+
+        //给向下标签添加A事件及动画
+        setInterval(timer,1000);
+        function timer() {
+            let scrollTop = document.documentElement.scrollTop;
+            if(scrollTop<860){
+                arrow.querySelector('a').setAttribute('href',ids[0]);
+            }
+            else if(scrollTop<860*2){
+                arrow.querySelector('a').setAttribute('href',ids[1]);
+            }
+            else if(scrollTop<860*3){
+                arrow.querySelector('a').setAttribute('href',ids[2]);
+            }
+            console.log(document.documentElement.scrollTop)
+
+        }
+
+
+
+
+        var scrollFunc = function (e) {
+            let scrollTop = document.documentElement.scrollTop;
+            if(scrollTop>860*2){
+                clearClass();
+                contact.className+=' active';
+                arrow.style.display='none';
+                arrowBack.style.display='block';
+
+            }
+            // else if(scrollTop>860*2){
+            //     clearClass();
+            //     project.className+=" active";
+            //     arrow.style.display='block';
+            //     arrowBack.style.display='none';
+            //
+            // }
+            else if(scrollTop>860) {
+                clearClass();
+                resume.className+=' active';
+                arrow.style.display='block';
+                arrowBack.style.display='none';
+
+            }
+            else{
+                clearClass();
+                firstPage.className+=' active';
+                arrow.style.display='block';
+                arrowBack.style.display='none';
+
+
+            }
+
+
+        }
+
+        //给页面绑定滑轮滚动和wheel方法
+        window.addEventListener("scroll", scrollFunc);
+
+
+        let animationTick = anime({
+            targets: '.briefInfo .ticks',
+            translateX: 270,
+            direction: 'alternate',
+            loop: true,
+            easing: 'easeInOutQuad',
+            autoplay: false,
+            delay:anime.stagger(150)
+
+        });
+
+        function loop(t) {
+            animationTick.tick(t);
+            customRAF = requestAnimationFrame(loop);
+        }
+        requestAnimationFrame(loop);
+
+
+        anime({
+            targets:'.arrowDown',
+            translateY:-100,
+            loop:true,
+            delay:100,
+            direction: 'alternate',
+            easing:"linear",
+            opacity:0.1
+        });
+
+        anime({
+            targets: '.tags',
+            scale:1.2,
+            rotate:'0.2turn',
+            delay: 150,
+            easing:'easeInExpo',
+            direction:'alternate',
+            loop:true
+        });
+
+    }
+    //
+</script>
+
+
+
+</body>
+</html>
