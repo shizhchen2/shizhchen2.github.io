@@ -1,0 +1,8 @@
+export const AUTH_SUCCESSFUL = 'auth_successful'
+export const ERROR_MSG = 'error_msg'
+export const UPDATE_USER = 'update_user'
+export const RESET_USER = 'reset_user'
+export const GET_USERLIST = 'get_user_list'
+export const GET_CHATLIST = 'get_chat_list'
+export const GET_MSG ='get_msg'
+export const READ_MSG ='read_msg'
