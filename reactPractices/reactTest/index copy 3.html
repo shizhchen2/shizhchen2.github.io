@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id='test'></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        let appContainer = document.getElementById('test');
+
+        class Selector extends React.Component{
+            constructor(props){
+                super(props)
+                this.state={
+                    value:props.defaultValue
+                }
+                this.handleSelectChange=this.handleSelectChange.bind(this);
+            }
+            handleSelectChange(e){
+                this.setState({
+                    value:e.target.value
+                })
+            }
+            render(){
+                const {list } = this.props;
+                const {value} = this.state;
+                return (
+                    <select value = {value} onChange={this.handleSelectChange}>
+                        {list.map(
+                            (color,index)=><option value={color.value} key={`select-item-${index}`}>{color.title}</option>
+                        )}
+                    </select>
+                )
+            }
+        }
+        const list = [
+            {title:"红",value:"red"},
+            {title:"黄",value:"yellow"},
+            {title:"蓝",value:"blue"},
+        ]
+
+        ReactDOM.render(<Selector list={list} />,appContainer);
+    </script>
+</body>
+</html>

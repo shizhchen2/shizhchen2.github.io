@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  padding:20px;
+}
+
+.leftPanel{
+  display: inline-block;
+}
+
+.rightPanel{
+  display: inline-block;
+  vertical-align: top;
+  margin-left:20px;
+}

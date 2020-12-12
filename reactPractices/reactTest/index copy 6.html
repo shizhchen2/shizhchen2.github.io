@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button{
+            padding:10px 20px;
+            background: white;
+            color:black;
+            border-radius: 5px;
+        }
+        .button-dark{
+            background-color:darkblue;
+            color:whitesmoke;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id='test'></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        let appContainer = document.getElementById('test');
+
+
+        const ThemeContext = React.createContext('light');
+
+        const UserContext = React.createContext("asdfasdf")
+
+
+        function ProfilePage(props){
+            return (
+                <div>
+                User:{props.user} Theme:{props.theme}
+                </div>
+            )
+        }
+
+
+        function Toolbar(props){
+            return (
+                <ThemeContext.Consumer>
+                
+                {
+                    theme =>(
+                        <UserContext.Consumer>
+                            {
+                                user=>(
+                                <div>
+                                    <ProfilePage user={user} theme={theme} />
+                                </div>
+                                )
+                            }
+         
+
+                        </UserContext.Consumer>
+                    )
+                }
+                </ThemeContext.Consumer>
+            )
+        }
+
+
+        class App extends React.Component{
+            render(){
+                const {loginUser,theme} = this.props
+                return (
+                    <ThemeContext.Provider value={theme}>
+                    <UserContext.Provider value={loginUser}>
+                        <Toolbar theme='light' />
+                    </UserContext.Provider>
+                    </ThemeContext.Provider>
+                )
+            }
+        }
+
+
+
+
+
+
+
+
+
+        ReactDOM.render(<App loginUser="张珊" theme="green" />,appContainer);
+    </script>
+</body>
+</html>

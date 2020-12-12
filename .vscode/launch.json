@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "Desktop_f3c24374"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Zoo",
+            "request": "launch",
+            "mainClass": "Zoo",
+            "projectName": "Desktop_f3c24374"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ListTest",
+            "request": "launch",
+            "mainClass": "ListTest"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Generics",
+            "request": "launch",
+            "mainClass": "Generics"
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id='test'></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        let appContainer = document.querySelector('#test');
+
+        class ButtonAdd extends React.Component{
+
+            handleClick=()=>{
+                const {count,onChange} = this.props
+                if(onChange){
+                    onChange(count+1);
+                }
+            }
+            render(){
+
+                const {count} = this.props;
+                return (
+                    <button onClick={this.handleClick}>ButtonAdd-${count}</button>
+                )
+            }
+        }
+
+        class ButtonSub extends React.Component{
+
+            handleClick=()=>{
+                const {count,onChange} = this.props
+                if(onChange){
+                    onChange(count-1);
+                }
+            }
+            render(){
+
+                const {count} = this.props;
+                return (
+                    <button onClick={this.handleClick}>ButtonSub-${count}</button>
+                )
+            }
+        }
+
+        class Calculator extends React.Component{
+           constructor(props){
+               super(props)
+               this.state={
+                   count: 50
+               }
+           } 
+           handleChange=(value)=>{
+                this.setState({
+                    count:value
+                })
+           }
+           render(){
+               const {count} = this.state;
+               return(
+                   <div>
+                        <ButtonAdd  count={count} onChange={this.handleChange}/>
+                        <ButtonSub count={count} onChange={this.handleChange} />
+                   </div>
+               )
+           }
+        }
+
+        ReactDOM.render(<Calculator />,appContainer);
+    </script>
+</body>
+</html>

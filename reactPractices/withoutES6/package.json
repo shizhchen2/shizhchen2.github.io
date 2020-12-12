@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "create-react-class": "^15.6.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0"
+  }
+}

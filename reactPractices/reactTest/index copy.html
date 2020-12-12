@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button{
+            padding:10px 20px;
+            background: white;
+            color:black;
+            border-radius: 5px;
+        }
+        .button-dark{
+            background-color:darkblue;
+            color:whitesmoke;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id='test'></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        let appContainer = document.getElementById('test');
+
+        function Button(props){
+            return (
+                <button className={["button","button-"+props.theme].join(' ')}>MyButton</button>
+            )
+        }
+
+        function Toolbar(props){
+            return(
+                <div>
+                    <ThemeButton theme={props.theme} />
+                </div>
+            )
+        }
+
+        function ThemeButton(props){
+            return (<Button theme={props.theme} />)
+        }
+
+        ReactDOM.render(<Toolbar theme="light" />,appContainer);
+    </script>
+</body>
+</html>
