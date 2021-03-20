@@ -1,0 +1,15 @@
+{
+  "name": "garena-interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shizhen_chen",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/cli": "^4.5.12",
+    "vue": "^2.6.12"
+  }
+}
